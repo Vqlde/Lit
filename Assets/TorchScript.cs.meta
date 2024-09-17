@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 82cf95832c246334daccae4098448909
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - circleMaskMaterial: {fileID: 2100000, guid: d73db56cf51cd6541af1d529041f01a7, type: 2}
+  - cam: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
