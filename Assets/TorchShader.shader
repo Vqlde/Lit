@@ -32,7 +32,7 @@ Shader "Custom/TorchShader"
             };
 
             sampler2D _MainTex;
-            float4 _CircleCenter; // Circle center in screen space (normalized coordinates)
+            float4 _CircleCenter;
             float _Radius;
 
             v2f vert (appdata_t v)
@@ -47,11 +47,9 @@ Shader "Custom/TorchShader"
             {
                 half4 color = tex2D(_MainTex, i.uv);
 
-                // Get the distance of the fragment from the circle center
                 float2 uv = i.uv;
                 float dist = distance(uv, _CircleCenter.xy);
 
-                // If the distance is greater than the radius, make it transparent
                 if (dist > _Radius)
                 {
                     discard;
