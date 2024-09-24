@@ -52,6 +52,7 @@ public class PlayerMovement : MonoBehaviour
         // Tjek om vi rammer en collider på groundLayer
         if ((groundLayer & (1 << collision.gameObject.layer)) != 0)
         {
+            Debug.Log("Står på jorden");
             isTouchingGround = true;
         }
     }
@@ -62,6 +63,7 @@ public class PlayerMovement : MonoBehaviour
         if ((groundLayer & (1 << collision.gameObject.layer)) != 0)
         {
             isTouchingGround = false;
+            Debug.Log("Står ikke på jorden");
         }
     }
 }
